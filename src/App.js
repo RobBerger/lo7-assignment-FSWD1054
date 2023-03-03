@@ -1,6 +1,7 @@
 import React from 'react';
 import UserContext from './UserContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
 
 function App() {
   return (
