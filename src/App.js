@@ -3,6 +3,7 @@ import UserContext from './UserContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Welcome from './Welcome';
+import SignInForm from './SignInForm';
 
 function App() {
   return (
