@@ -1,17 +1,18 @@
 import React from 'react';
 
+
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={user}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route index element={<Welcome />} />
+            <Route path="sign-in" element={<SignInForm />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 
