@@ -6,8 +6,13 @@ import Welcome from './Welcome';
 import SignInForm from './SignInForm';
 
 function App() {
+
+  function addUser(user) {
+    authLink(user);
+  }
+
   return (
-    <UserContext.Provider value={user}>
+    <UserContext.Provider value={user, authLink}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>
