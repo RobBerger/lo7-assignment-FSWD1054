@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Stack from "react-bootstrap/Stack";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import UserContext from "./UserContext";
 
 function Home() {
+    let user = useContext(UserContext);
     return (
         <>
           <Navbar bg="light" variant="light">

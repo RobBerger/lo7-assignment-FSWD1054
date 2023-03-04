@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import UserContext from './UserContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
@@ -7,12 +7,10 @@ import SignInForm from './SignInForm';
 
 function App() {
 
-  function addUser(user) {
-    authLink(user);
-  }
+  let user = useContext(UserContext);
 
   return (
-    <UserContext.Provider value={user, authLink}>
+    <UserContext.Provider value={user}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>

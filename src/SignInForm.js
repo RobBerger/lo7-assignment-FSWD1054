@@ -10,7 +10,7 @@ function SignInForm() {
         password: ""
       });
 
-      let { authLink } = useContext(UserContext);
+      let user = useContext(UserContext);
 
       function handleChange(event) {
         setCredentials((prevValue) => {
