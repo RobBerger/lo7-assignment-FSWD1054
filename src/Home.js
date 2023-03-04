@@ -17,7 +17,7 @@ function Home() {
                 <Link to="/" className="nav-link">Home</Link>
               </Nav>
               <Navbar.Text>
-                {authLink()}
+                {/* {authLink()} */}
               </Navbar.Text>
             </Container>
           </Navbar>
