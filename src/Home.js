@@ -15,6 +15,7 @@ function Home() {
             <Container>
               <Nav className="me-auto">
                 <Link to="/" className="nav-link">Home</Link>
+                <Link to="sign-in" className="nav-link">Sign In</Link>
               </Nav>
               <Navbar.Text>
                 {/* {authLink()} */}

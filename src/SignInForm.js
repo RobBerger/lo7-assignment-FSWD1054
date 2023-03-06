@@ -20,6 +20,7 @@ function SignInForm() {
 
       function handleSubmit(event) {
         event.preventDefault();
+        console.log(credentials);
       }
 
       return (

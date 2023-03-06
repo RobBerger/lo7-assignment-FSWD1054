@@ -8,6 +8,7 @@ import SignInForm from './SignInForm';
 function App() {
 
   let user = useContext(UserContext);
+  console.log(user);
 
   return (
     <UserContext.Provider value={user}>
