@@ -11,7 +11,7 @@ function App() {
   console.log(user);
 
   return (
-    <UserContext.Provider value={user}>
+    <UserContext.Provider value={ user }>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>
