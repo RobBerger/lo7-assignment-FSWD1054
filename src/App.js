@@ -4,14 +4,17 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Welcome from './Welcome';
 import SignInForm from './SignInForm';
+import user from './user-data';
+import DisplayName from './DisplayName';
 
 function App() {
 
-  let user = useContext(UserContext);
-  console.log(user);
+  function addUser(credentials) {
+    user.push(credentials);
+  }
 
   return (
-    <UserContext.Provider value={{ user }}>
+    <UserContext.Provider value={{ user: user, addUser }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>

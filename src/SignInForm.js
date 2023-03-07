@@ -10,7 +10,7 @@ function SignInForm() {
         password: ""
       });
 
-      let user = useContext(UserContext);
+      let { addUser } = useContext(UserContext);
 
       function handleChange(event) {
         setCredentials((prevValue) => {
@@ -20,7 +20,7 @@ function SignInForm() {
 
       function handleSubmit(event) {
         event.preventDefault();
-        console.log(credentials);
+        addUser(credentials);
       }
 
       return (

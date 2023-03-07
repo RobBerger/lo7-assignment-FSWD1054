@@ -6,9 +6,10 @@ import Stack from "react-bootstrap/Stack";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import UserContext from "./UserContext";
+import DisplayName from "./DisplayName";
 
 function Home() {
-    let user = useContext(UserContext);
+    // let user = useContext(UserContext);
     return (
         <>
           <Navbar bg="light" variant="light">
@@ -18,7 +19,7 @@ function Home() {
                 <Link to="sign-in" className="nav-link">Sign In</Link>
               </Nav>
               <Navbar.Text>
-                test
+                Test
               </Navbar.Text>
             </Container>
           </Navbar>
